@@ -1,13 +1,17 @@
-{% macro card(img, title, line1, line2, line3) %}
-<div class="stuff-card">
-  <img src="../img/icons/{{ img }}" />
-  <h4 class="card-title mono">
-    {{ title }}
-  </h4>
-  <p>{{ line1 }}</p>
-  <p>{{ line2 }}</p>
-  <p>{{ line3 }}</p>
-</div>
+{% macro card(url, img, title, name, desc) %}
+  <a href="{{ url }}" target="_blank">
+    <div class="stuff-card">
+      <img src="../img/icons/{{ img }}"/>
+      <h3 class="card-title mono">
+
+        {{ title }}
+      </h3>
+      <p>
+        <strong>{{ name }}</strong>
+        {{ desc }}
+      </p>
+    </div>
+  </a>
 {% endmacro %}
 
 <section class="stuff" id="stuff">
@@ -23,38 +27,45 @@
     <div class="row grid">
       {{
         card(
+          "https://blog.sycamore.design",
           "blocks.svg",
+          
           "Read my blog",
-          "We specialize in beautiful, lightning-fast websites that are optimized for all devices.",
-          "From concept to completion, we are your one-stop shop for upgrading your web presence and generating more leads."
+          "The Sycamore Design Blog", 
+          "covers the art & business of content creation, marketing & copywriting, technical writing, freelancing, and web development."
         )
       }}
 
       {{
         card(
+          "https://www.getrevue.co/profile/sycamore",
           "paper.svg",
+          
           "Read my newsletter",
-          "Beginner-friendly documentation is the best possible advocate for your software product.",
-          "Our empathy-driven docs and tutorials keep new users happy and help persuade existing users to tell their friends."
+          "Strategies for Content & Career", 
+          "offers actionable advice for becoming a more effective communicator and cultivating a strong personal brand."
         )
       }}
 
       {{
         card(
+          "https://work.sycamore.design",
           "speaker.svg",
-          "See my portfolio",
-          "Your website has mere seconds to convince a new visitor to stick around.",
-          "We captivate your audience by creating memorable experiences and centering their satisfaction at every step."
+          
+          "View my portfolio",
+          "My portfolio", 
+          "gathers my work as a writer, speaker, web developer, and content creator across various venues & platforms — all in a convenient chronological timeline."
         )
       }}
 
       {{
         card(
+          "https://blog.sycamore.design",
           "click.svg",
-          "Read my press bio",
-          "SEO doesn't have to feel like sorcery.", 
-          "We demystify the process of keyword research and technical SEO for our clients.",
-          "Need killer content to bring in new search engine traffic? Ask about content-driven SEO."
+          "Read my bio",
+          
+          "My press kit", 
+          "includes all of the standard information I reckon you might want if you invite me to be a guest on a thing. I don't know! People request this stuff sometimes."
         )
       }}
     </div>

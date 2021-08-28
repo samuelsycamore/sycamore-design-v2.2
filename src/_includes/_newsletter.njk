@@ -8,29 +8,41 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>
-          Join our scrappy
-          collective of web developers, designers, writers, and freelancers!
-        </p>
-        <p>
-          I'll deliver a carefully curated batch of exciting web dev news a
-          few times a month.
-        </p>
+        <h2>Newsletter 💥 Strategies for Content & Career </h2>
+        <p>By Sam Sycamore, published twice monthly.</p>
+        <p>Actionable advice for becoming a better communicator.</p>
+        <p>Achieve your career goals by cultivating a strong personal brand!</p>
+      </p>
+      <div id="revue-embed">
+        <form action="https://www.getrevue.co/profile/sycamore/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+          <div class="revue-form-group">
+            <label for="member_email">Your Email</label>
+            <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+          </div>
+          <div class="revue-form-group">
+            <label for="member_first_name">Your Name</label>
+            <input class="revue-form-field" placeholder="Your name..." type="text" name="member[first_name]" id="member_first_name">
+          </div>
+          <div class="revue-form-actions">
+            <input class="button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+          </div>
+        </form>
       </div>
-      <div class="col form">
-        <form
+    </div>
+    <div class="col form">
+      <form
           action="https://buttondown.email/api/emails/embed-subscribe/samuelsycamore"
           method="post"
           target="popupwindow"
           onsubmit="window.open('https://buttondown.email/samuelsycamore', 'popupwindow')"
           class="embeddable-buttondown-form"
         >
-          <label for="bd-email">Email</label>
-          <input type="email" name="email" class="email" placeholder="Enter your email" id="bd-email" />
-          <input type="hidden" value="1" name="embed" />
-          <input class="btn input-btn" type="submit" value="Sign Up" />
-        </form>
-      </div>
+        <label for="bd-email">Email</label>
+        <input type="email" name="email" class="email" placeholder="Enter your email" id="bd-email"/>
+        <input type="hidden" value="1" name="embed"/>
+        <input class="btn input-btn" type="submit" value="Sign Up"/>
+      </form>
     </div>
   </div>
+</div>
 </section>

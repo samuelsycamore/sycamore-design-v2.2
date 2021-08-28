@@ -116,7 +116,7 @@ ul {
         }
         .headline {
           font-size: 7rem;
-          line-height: 0.9em;
+          line-height: 1.1em;
           margin-bottom: 2.5rem;
           @media screen and (max-width: 800px) {
             font-size: 6rem;
@@ -219,6 +219,7 @@ ul {
       p {
         text-align: left;
         margin-bottom: 1rem;
+        color: $light;
       }
       @media screen and (max-width: 60px) {
         padding: 2rem 1.5rem;
