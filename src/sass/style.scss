@@ -115,14 +115,14 @@ ul {
           padding: 2rem 1.5rem;
         }
         .headline {
-          font-size: 7rem;
+          font-size: 10rem;
           line-height: 1.1em;
           margin-bottom: 2.5rem;
-          @media screen and (max-width: 800px) {
-            font-size: 6rem;
+          @media screen and (max-width: 1000px) {
+            font-size: 7rem;
           }
           @media screen and (max-width: 520px) {
-            font-size: 4.5rem;
+            font-size: 5rem;
           }
         }
         .subheadline {
