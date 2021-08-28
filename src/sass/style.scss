@@ -234,7 +234,7 @@ ul {
 }
 
 .socials {
-  min-height: 100vh;
+  margin-bottom: 200px;
   .row {
     .col {
       .desc {
@@ -299,8 +299,8 @@ img {
 
 .newsletter {
   min-height: 100vh;
+  padding: 100px 0;
   display: flex;
-  align-items: center;
   background: rgb(55, 48, 163);
   background: linear-gradient(33deg, #4b134f 0%, #c94b4b 100%);
   .row {
