@@ -130,7 +130,7 @@ ul {
           font-size: 3rem;
           font-weight: thin;
           font-style: italic;
-          line-height: 1.3em;;
+          line-height: 1.3em;
           margin-bottom: 2.5rem;
           @media screen and (max-width: 660px) {
             font-size: 2.2rem;
@@ -235,7 +235,6 @@ ul {
 
 .socials {
   min-height: 100vh;
-  margin-bottom: 200px;
   .row {
     .col {
       .desc {
@@ -261,16 +260,29 @@ ul {
     }
   }
   .row.grid {
-    @include theme-grid;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 47.5%);
+    gap: 5%;
     align-items: center;
     .col {
+      margin-top: 20px;
       a {
         display: inline-block;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: thin;
         font-style: italic;
-        margin-bottom: 2.5rem;
-        @media screen and (max-width: 660px) {
+        line-height: 2em;
+        color: $color-1;
+        &:hover {
+          color: $color-2;
+          transform: scale(105%);
+          transition: 300ms ease-in-out;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 600px) {
           font-size: 2.2rem;
         }
       }
@@ -318,16 +330,19 @@ img {
         }
       }
       &.form {
+        label {
+          font-weight: bold;
+        }
         input {
           font-size: inherit;
-          margin-right: 0.8rem;
         }
         input.email {
           width: 100%;
-          max-width: 500px;
+          max-width: 320px;
           background: $dark;
           color: $color-1;
-          padding: 1.5rem;
+          padding: 1rem;
+          margin: 1.5rem 0;
           border: 1px solid $color-1;
           border-radius: 5px;
         }
@@ -336,6 +351,14 @@ img {
           color: $light;
           transform: scale(102%);
           transition: 300ms ease-in-out;
+        }
+        #member_submit {
+          margin-top: 15px;
+          width: 320px;
+          @media screen and (max-width: 400px) {
+            width: 100%;
+            max-width: 320px;
+          }
         }
       }
     }
