@@ -394,10 +394,7 @@ img {
 
     .col {
       &.content {
-        z-index: 49;
-        max-width: 800px;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-        padding: 2.5rem 4rem;
+        padding: 2.5rem 2rem;
         border-radius: 5px;
         .headline {
           font-size: 8rem;
@@ -423,19 +420,10 @@ img {
           @media screen and (max-width: 650px) {
             font-size: 1.8rem;
           }
-          @media screen and (max-width: 550px) {
-            font-size: 1.3rem;
-          }
         }
         .callout {
           font-size: 1.5rem;
           margin-bottom: 2.5rem;
-          @media screen and (max-width: 550px) {
-            font-size: 1.4rem;
-          }
-          @media screen and (max-width: 550px) {
-            font-size: 1.3rem;
-          }
         }
       }
     }
