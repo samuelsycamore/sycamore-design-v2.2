@@ -67,6 +67,7 @@ h6 {
   padding: 1.5rem 4rem;
   border-radius: 5px;
   border: 1px solid $color-1;
+  margin-bottom: 1rem;
 }
 
 .btn:hover {
@@ -74,6 +75,25 @@ h6 {
   color: $light;
   border: 1px solid $light;
   transform: scale(102%);
+  transition: 300ms ease-in-out;
+}
+
+.btn-links {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  display: inline-block;
+  background-color: #9dc2ee;
+  color: $dark;
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.btn-links:hover {
+  background-color: $color-4;
+  color: $light;
   transition: 300ms ease-in-out;
 }
 
@@ -142,9 +162,6 @@ ul {
           @media screen and (max-width: 500px) {
             font-size: 1.5rem;
           }
-        }
-        .btn {
-          margin-bottom: 1rem;
         }
       }
       &.animation {
@@ -358,6 +375,66 @@ img {
           @media screen and (max-width: 400px) {
             width: 100%;
             max-width: 320px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.links-page {
+  background: #000;
+  .row {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 5%;
+
+    .col {
+      &.content {
+        z-index: 49;
+        max-width: 800px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+        padding: 2.5rem 4rem;
+        border-radius: 5px;
+        .headline {
+          font-size: 8rem;
+          line-height: 1.1em;
+          margin-bottom: 2.5rem;
+          @media screen and (max-width: 650px) {
+            font-size: 6rem;
+          }
+          @media screen and (max-width: 550px) {
+            font-size: 5rem;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 4rem;
+          }
+        }
+        .subheadline {
+          color: $color-1;
+          font-size: 2rem;
+          font-weight: thin;
+          font-style: italic;
+          line-height: 1.3em;
+          margin-bottom: 2.5rem;
+          @media screen and (max-width: 650px) {
+            font-size: 1.8rem;
+          }
+          @media screen and (max-width: 550px) {
+            font-size: 1.3rem;
+          }
+        }
+        .callout {
+          font-size: 1.5rem;
+          margin-bottom: 2.5rem;
+          @media screen and (max-width: 550px) {
+            font-size: 1.4rem;
+          }
+          @media screen and (max-width: 550px) {
+            font-size: 1.3rem;
           }
         }
       }
